@@ -1,0 +1,13 @@
+<div *ngFor="let content of list | paginate: { itemsPerPage: 1, currentPage: paginaAtual }; index as i">
+	<h5>Semestre: {{content.semestre}}</h5>
+	<p>Disciplinas:</p>
+	<ul class="list">
+		<li class="item" *ngFor="let subject of content.subjects; index as a">
+			<a [routerLink]="['/subjects-show', i, a]">
+				{{content.subjects[a]}}
+			</a>
+
+		</li>
+	</ul>
+<pagination-controls (pageChange)="paginaAtual = $event" previousLabel="Anterior" nextLabel="Próximo"></pagination-controls>
+</div>

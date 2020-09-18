@@ -1,0 +1,10 @@
+<div *ngFor='let student of members; index as i'>
+	<h4>Aluno {{ i+1 }}</h4>
+	<p><strong>Nome: </strong>{{ student.name }}</p>
+	<p><strong>RA: </strong>{{ student.ra }}</p>
+	<p><strong>Link GitHub: </strong>
+		<a href="{{ student.githubLink }}">
+			{{ student.githubLink }}
+		</a>
+	</p>
+</div>

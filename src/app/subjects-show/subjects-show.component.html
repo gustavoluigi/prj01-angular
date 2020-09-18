@@ -1,0 +1,17 @@
+<p>
+{{materia}}
+</p>
+
+
+<p *ngIf="notaGustavo !== undefined">
+ Média final Gustavo: {{notaGustavo}}
+</p>
+
+<p *ngIf="notaRaul !== undefined">
+ Média final Raul: {{ notaRaul !== 0 ? notaRaul : 'Não cursou esta disciplina'}}
+</p>
+
+<p>
+  <span *ngIf='(notaGustavo + notaRaul) / 2'> Média: </span>
+  {{ (notaGustavo + notaRaul) / 2 ? (notaGustavo + notaRaul) / 2 : 'Disciplina não cursada pelos alunos' }}
+</p>
