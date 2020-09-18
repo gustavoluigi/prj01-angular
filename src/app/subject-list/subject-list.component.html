@@ -3,7 +3,7 @@
 	<p>Disciplinas:</p>
 	<ul class="list">
 		<li class="item" *ngFor="let subject of content.subjects; index as a">
-			<a [routerLink]="['/subjects-show', i, a]">
+			<a [routerLink]="['/subjects-show', paginaAtual - 1, a]">
 				{{content.subjects[a]}}
 			</a>
 

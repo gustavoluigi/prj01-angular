@@ -8,8 +8,8 @@ export const students = [
 
     {
       name: 'Raul Caldas Testa',
-      ra: '',
-      githubLink: ''
+      ra: '0050831821031',
+      githubLink: 'https://github.com/Raul0133'
     }
   
 ];
